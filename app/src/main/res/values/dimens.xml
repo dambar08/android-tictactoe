@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="right_border_stroke_width">4dp</dimen>
+    <dimen name="left_border_stroke_width">4dp</dimen>
+    <dimen name="bottom_border_stroke_width">4dp</dimen>
+    <dimen name="top_border_stroke_width">4dp</dimen>
+    <dimen name="board_radius">10dp</dimen>
+</resources>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameConfigurationActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.36" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:onClick="startGame"
+            android:padding="10dp"
+            android:text="@string/start_game"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline11"
+            app:layout_constraintVertical_bias="0.733" />
+
+        <TextView
+            android:id="@+id/tv_easy"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/vertical_unselected_easy_button"
+            android:gravity="center"
+            android:onClick="setDifficultyLevelToEasy"
+            android:text="@string/easy"
+            android:textAppearance="@style/AppTheme.TextAppearanceMedium"
+            android:textColor="@color/colorOnUnSelected"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+        <TextView
+            android:id="@+id/tv_medium"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/vertical_unselected_medium_button"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:onClick="setDifficultyLevelToMedium"
+            android:textAppearance="@style/AppTheme.TextAppearanceMedium"
+            android:text="@string/medium"
+            android:textColor="@color/colorOnUnSelected"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/tv_easy" />
+
+        <TextView
+            android:id="@+id/tv_hard"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/vertical_selected_hard_button"
+            android:textAppearance="@style/AppTheme.TextAppearanceMedium"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:onClick="setDifficultyLevelToHard"
+            android:text="@string/hard"
+            android:textColor="@color/colorOnSelected"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline14"
+            app:layout_constraintTop_toBottomOf="@+id/tv_medium" />
+
+        <TextView
+            android:id="@+id/tv_difficulty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="casual"
+            android:text="@string/difficulty"
+            android:textAppearance="@style/AppTheme.TextAppearanceBold"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline11"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline27" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.56" />
+
+        <TextView
+            android:id="@+id/tv_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/playerType"
+            android:textAppearance="@style/AppTheme.TextAppearanceBold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline28"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+        <TextView
+            android:id="@+id/tv_cross"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/selected_x_button"
+            android:textAppearance="@style/AppTheme.TextAppearanceMedium"
+            android:gravity="center"
+            android:onClick="setPlayerToCross"
+            android:text="@string/cross"
+            android:textColor="@color/colorOnSelected"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_player"
+            app:layout_constraintEnd_toStartOf="@+id/tv_nought"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_player"
+            app:layout_constraintStart_toStartOf="@+id/guideline14" />
+
+        <TextView
+            android:id="@+id/tv_nought"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/unselected_o_button"
+            android:gravity="center"
+            android:onClick="setPlayerToNought"
+            android:textAppearance="@style/AppTheme.TextAppearanceMedium"
+            android:text="@string/nought"
+            android:textColor="@color/colorOnUnSelected"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_cross"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_cross"
+            app:layout_constraintStart_toStartOf="@+id/guideline15" />
+
+        <TextView
+            android:id="@+id/tv_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="casual"
+            android:text="@string/mode"
+            android:textAppearance="@style/AppTheme.TextAppearanceBold"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/guideline27"
+            app:layout_constraintEnd_toStartOf="@+id/guideline14"
+            app:layout_constraintStart_toStartOf="@+id/guideline12"
+            app:layout_constraintTop_toTopOf="@+id/guideline28" />
+
+        <TextView
+            android:id="@+id/tv_computer_mode"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/selected_x_button"
+            android:gravity="center"
+            android:onClick="changeToComputerMode"
+            android:text="@string/computer"
+            android:textAppearance="@style/AppTheme.TextAppearanceMedium"
+            android:textColor="@color/colorOnSelected"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_mode"
+            app:layout_constraintEnd_toStartOf="@+id/tv_two_player_mode"
+            app:layout_constraintStart_toStartOf="@+id/guideline14" />
+
+        <TextView
+            android:id="@+id/tv_two_player_mode"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/unselected_o_button"
+            android:gravity="center"
+            android:onClick="changeToTwoPlayerMode"
+            android:text="@string/two_player"
+            android:textAppearance="@style/AppTheme.TextAppearanceMedium"
+            android:textColor="@color/colorOnUnSelected"
+            app:layout_constraintBaseline_toBaselineOf="@+id/tv_computer_mode"
+            app:layout_constraintEnd_toStartOf="@+id/guideline13"
+            app:layout_constraintStart_toStartOf="@+id/guideline15" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:contentDescription="@string/logo" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,31 @@
+<resources>
+    <string name="fontFamily">casual</string>
+    <string name="app_name">Tic Tac Toe</string>
+    <string name="tic_tac_toe">Tic Tac Toe</string>
+    <string name="board_activity_shared_preferences">board activity shared preferences</string>
+    <string name="game_configuration_activity_shared_preferences">game configuration activity shared preferences</string>
+    <string name="main_activity_shared_preferences">main activity shared preferences</string>
+    <string name="x">X</string>
+    <string name="o">O</string>
+    <string name="hard">Hard</string>
+    <string name="medium">Medium</string>
+    <string name="start_game">Start Game</string>
+    <string name="easy">Easy</string>
+    <string name="nought">O</string>
+    <string name="cross">X</string>
+    <string name="error">Error</string>
+    <string name="message">Message</string>
+    <string name="winner_xo_msg"><font color="#525252">X</font> <font color="#F2EAD4">O</font> <font color="#525252">DRAW !</font></string>
+    <string name="winner_x_msg"><font color="#525252">X</font> <font color="#525252">WINNER !</font></string>
+    <string name="winner_o_msg"><font color="#F2EAD4">O</font> <font color="#525252">WINNER !</font></string>
+    <string name="restart_game">RESTART GAME</string>
+    <string name="x_turn_msg"><font color="#525252"><b>X</b> Turn</font></string>
+    <string name="o_turn_msg"><font color="#525252"><b>O</b> Turn</font></string>
+    <string name="playerType">Player</string>
+    <string name="difficulty">Difficulty</string>
+    <string name="logo">logo</string>
+    <string name="mode">Mode</string>
+    <string name="computer">Computer</string>
+    <string name="two_player">Two Player</string>
+
+</resources>

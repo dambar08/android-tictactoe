@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26BCAC</color>
+    <color name="colorPrimaryDark">#074243</color>
+    <color name="colorOnPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name ="colorSelected">#074243</color>
+    <color name = "colorOnSelected">#DDDDDD</color>
+    <color name ="colorUnSelected">#DDDDDD</color>
+    <color name = "colorOnUnSelected">#074243</color>
+
+    <color name="colorCross">#525252</color>
+    <color name="colorNought">#F2EAD4</color>
+    <color name="colorBorder">#1EA092</color>
+</resources>
