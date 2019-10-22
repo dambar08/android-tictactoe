@@ -34,7 +34,7 @@ public final class Computer extends Mode implements Bot {
 
     @Override
     public String toString() {
-        return "Computer";
+        return "Computer, DifficultyLevel:"+difficultyLevel;
     }
 
     @Override
